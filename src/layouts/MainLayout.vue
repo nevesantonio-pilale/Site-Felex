@@ -9,11 +9,11 @@
           </div>
         </q-toolbar-title>
 
-        <q-tabs class="q-text-capitalize menu-bar" v-model="tab">
-          <q-tab name="inicio" label="Início" />
-          <q-tab name="autorais" label="Autorais" />
-          <q-tab name= "ensaio" label="Ensaio Fotografico" />
-          <q-tab name="sobre" label="Sobre Felex" />
+        <q-tabs class="menu-bar" v-model="tab">
+          <q-tab class="tab-list text-capitalize" name="inicio" label="Início" />
+          <q-tab class="tab-list text-capitalize" name="autorais" label="Sobre Felex" />
+          <q-tab class="tab-list text-capitalize" name= "ensaio" label="Ensaio Fotografico" />
+          <q-tab class="tab-list text-capitalize" name="sobre" label="contacto" />
         </q-tabs>
 
       </q-toolbar>
@@ -27,7 +27,15 @@
             <p class="text-body1"> Agencia de fotografias profissional, estamos situados na cidade de Nacala Porto</p>
             <p class="text-body1"> O ferecemos serviços de fotografia e filmagem de imegens de alta qualidade </p>
 
-            <q-btn class="q-mt-lg" color="grey-9" text-color="red-1" glossy unelevated icon="camera_enhance" label="Marque a sua seção " />
+            <q-btn
+              clickable
+              class="q-mt-lg"
+              color="grey-9"
+              text-color="red-1"
+              glossy
+              unelevated
+              icon="camera_enhance"
+              label="Marque a sua seção " />
           </div>
         </q-card-section>
       </q-card>
