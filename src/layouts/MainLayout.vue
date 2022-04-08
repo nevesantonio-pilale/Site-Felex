@@ -1,32 +1,7 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header class="header">
-      <q-toolbar class="header-toolbar q-pt-md">
-
-        <q-toolbar-title>
-          <div class="logo">
-              <img src="../assets/image/logo.png" alt="logo">
-          </div>
-        </q-toolbar-title>
-
-        <q-tabs class="menu-bar" v-model="tab">
-          <q-tab class="tab-list text-capitalize" name="inicio" label="Início" />
-          <q-tab class="tab-list text-capitalize" name="autorais" label="Sobre Felex" />
-          <q-tab class="tab-list text-capitalize" name= "ensaio" label="Ensaio Fotografico" />
-          <q-tab class="tab-list text-capitalize" name="sobre" label="contacto" />
-        </q-tabs>
-
-      </q-toolbar>
-
-    </q-header>
-
-    <q-footer elevated>
-        <q-toolbar>
-          <q-toolbar-title>Footer</q-toolbar-title>
-        </q-toolbar>
-    </q-footer>
-
-    <q-page-container>
+    
+    <q-page-container class="bg-grey-1">
       <router-view />
     </q-page-container>
 
