@@ -2,7 +2,7 @@
   <q-layout view="lHh Lpr lFf">
     <q-header class="header">
       <q-toolbar class="header-toolbar q-pt-md">
-        
+
         <q-toolbar-title>
           <div class="logo">
               <img src="../assets/image/logo.png" alt="logo">
@@ -20,31 +20,15 @@
 
     </q-header>
 
-      <q-card class="q-text-white my-card" style="width: 550px" flat>
-        <q-card-section>
-          <div>
-            <h4> Felix Bonix Bonix Ivanildo </h4>
-            <p class="text-body1"> Agencia de fotografias profissional, estamos situados na cidade de Nacala Porto</p>
-            <p class="text-body1"> O ferecemos serviços de fotografia e filmagem de imegens de alta qualidade </p>
-
-            <q-btn
-              clickable
-              class="q-mt-lg"
-              color="grey-9"
-              text-color="red-1"
-              glossy
-              unelevated
-              icon="camera_enhance"
-              label="Marque a sua seção " />
-          </div>
-        </q-card-section>
-      </q-card>
-
     <q-footer elevated>
         <q-toolbar>
           <q-toolbar-title>Footer</q-toolbar-title>
         </q-toolbar>
     </q-footer>
+
+    <q-page-container>
+      <router-view />
+    </q-page-container>
 
   </q-layout>
 </template>
@@ -104,7 +88,7 @@ export default defineComponent({
     const leftDrawerOpen = ref(false)
 
     return {
-      
+
     }
   }
 })
